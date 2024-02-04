@@ -124,8 +124,8 @@ fun Timer(
             val beta= (250f* value+145f)*(PI/180f).toFloat()
             //from this we get the angle between the center and the handle from which we can get the perpendicular and base
             val r= size.width/2f
-            val a= cos(beta)*r
-            val b = sin(beta)*r
+            val a= cos(beta)*r// perpendicular of the rectangle
+            val b = sin(beta)*r//base of the rectangle
 
             drawPoints(
                 listOf(Offset(center.x+a,center.y+b)),//error
